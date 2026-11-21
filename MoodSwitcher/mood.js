@@ -1,11 +1,11 @@
 // Maya Celikcan - November 20, 2026
 
-// Step 1: Select the HTML elements.
+//  Select the HTML elements.
 const quote = document.querySelector("#quote");
 const title = document.querySelector("#title");
 const buttons = document.querySelector("#buttons");
 
-// Step 2: Store the settings for each mood.
+// Store the settings for each mood.
 const moods = {
   happy: {
     name: "Happy",
@@ -33,7 +33,7 @@ const moods = {
   }
 };
 
-// Step 3: Change the page when a mood button is clicked.
+// Change the page when a mood button is clicked.
 function handleMoodButtonClick(moodClick) {
   if (moodClick.target.classList.contains("mood-btn")) {
     const mood = moodClick.target.getAttribute("data-mood");
@@ -49,5 +49,5 @@ function handleMoodButtonClick(moodClick) {
   }
 }
 
-// Step 4: Listen for clicks on the parent container.
+// Listen for clicks on the parent container.
 buttons.addEventListener("click", handleMoodButtonClick);
